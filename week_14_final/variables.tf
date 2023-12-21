@@ -3,11 +3,11 @@ variable "domain" {
 }
 
 variable "github_username" {
-  default = ""
+  default = "Niennienzz"
 }
 
 variable "github_personal_token" {
-  default = ""
+  default = "YOUR_GITHUB_TOKEN"
 }
 
 variable "region" {

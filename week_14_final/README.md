@@ -23,3 +23,24 @@
 ---
 
 ## 02 | 实现与运行
+
+- 参考了优秀同学的[作业](https://github.com/sawyer523/geektime-devops/tree/main/week14), 修复了一些小细节
+- 本次作业使用腾讯云作为云厂商, 需要登录腾讯云账号获取 Secret ID 和 Secret Key 并配置到本地 (生产环境注意使用安全的方式管理)
+
+```shell
+export TF_VAR_secret_id=YOUR_SECRET_ID
+export TF_VAR_secret_key=YOUR_SECRET_KEY
+```
+
+- 同时我们还需要 GitHub 的 Personal Access Token, 用于在 Jenkins 中拉取代码仓库
+
+```shell
+export TF_VAR_github_personal_token=YOUR_GITHUB_TOKEN
+```
+
+- 使用 Terraform 拉进起环境
+
+```shell
+terraform init
+terraform apply --auto-approve
+```
