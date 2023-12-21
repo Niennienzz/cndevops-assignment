@@ -15,9 +15,9 @@ spec:
     spec:
       project: "default"
       source:
-        repoURL: https://github.com/sawyer523/geektime-devops.git
+        repoURL: https://github.com/Niennienzz/cndevops-assignment.git
         targetRevision: HEAD
-        path: week14/bookinfo
+        path: week_14_final/bookinfo
       destination:
         server: '{{server}}'
         namespace: default
